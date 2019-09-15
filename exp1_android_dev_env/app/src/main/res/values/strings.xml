@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">exp1_android_dev_env</string>
+    <string name="welcome_text">我的第一个安卓程序</string>
+</resources>
