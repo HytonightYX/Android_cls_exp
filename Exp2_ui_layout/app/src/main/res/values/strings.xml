@@ -5,4 +5,7 @@
     <string name="username">用 户 名:</string>
     <string name="pwd">密码:</string>
     <string name="remPwd">记住密码</string>
+    <string name="input_here">INPUT HERE</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
