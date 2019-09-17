@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exp2_ui_layout</string>
+    <string name="pleaseInput">Please input username:</string>
+    <string name="btnLogin">Login</string>
+    <string name="username">用 户 名:</string>
+    <string name="pwd">密码:</string>
+    <string name="remPwd">记住密码</string>
+</resources>
