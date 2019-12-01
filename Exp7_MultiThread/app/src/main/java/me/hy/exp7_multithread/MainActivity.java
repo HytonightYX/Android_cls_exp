@@ -41,8 +41,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 long ret = 0;
-                for (int i = 1; i <= 50000; i++) {
-                    ret += i;
+                for (int i = 1; i <= 10000; i++) {
+                    for (int j = 10001; j < 30000; j++) {
+                        for (int k = 30001; k < 50000; k++) {
+                            ret += i + j + k;
+                        }
+                    }
                 }
                 editText.setText(String.valueOf(ret));
             }
@@ -67,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                new MyTask().execute("https://baidu.com");
-                new MyTask().execute("https://yunxi.site");
+                new MyTask().execute("http://yunxi.site");
             }
         });
     }
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            tvPercent.setText("异步开始");
+            tvPercent.setText("下载开始");
             progressBar.setVisibility(View.VISIBLE);
         }
 
@@ -143,8 +147,12 @@ public class MainActivity extends AppCompatActivity {
                     Thread.sleep(2000);
 
                     long ret = 0;
-                    for (int i = 1; i <= 3000; i++) {
-                        ret += i;
+                    for (int i = 1; i <= 10000; i++) {
+                        for (int j = 10001; j < 30000; j++) {
+                            for (int k = 30001; k < 50000; k++) {
+                                ret += i + j + k;
+                            }
+                        }
                     }
 
                     Log.i("THREAD", "Thread is running, ret=" + ret);
